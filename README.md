@@ -22,6 +22,7 @@ allprojects {
     ```
   
   Step3. 在Application中初始化:
+  
     ```javascript
   public class MyApplication extends Application {
 
@@ -43,9 +44,11 @@ allprojects {
         }.start();
     }
 }
+
   ```
 
 Step4. 在需要的地方使用:
+
     ```javascript
 public class MainActivity extends AppCompatActivity {
 
