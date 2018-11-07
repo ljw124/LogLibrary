@@ -19,13 +19,13 @@ allprojects {
   dependencies {
 	        implementation 'com.github.ljw124:LogLibrary:1.0.5'
 	}
+	
     ```
   
   Step3. 在Application中初始化:
-  
-    ```javascript
+ 
   public class MyApplication extends Application {
-
+	
     protected static Logger log = Logger.getLogger(MyApplication.class);
 
     @Override
@@ -45,11 +45,9 @@ allprojects {
     }
 }
 
-  ```
 
 Step4. 在需要的地方使用:
 
-    ```javascript
 public class MainActivity extends AppCompatActivity {
 
     protected static Logger log = Logger.getLogger(MainActivity.class);
@@ -64,4 +62,4 @@ public class MainActivity extends AppCompatActivity {
         log.error("网络出问题啦……");
     }
 }
-  ```
+
