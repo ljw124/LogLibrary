@@ -14,7 +14,7 @@ import java.io.IOException;
  * Configures the Log4j logging framework.
  * See <a href="http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html">Patterns</a> for pattern layout.
  *
- * Created by ljw on 2017/3/29.
+ * Created by ljw on 2018/11/7.
  */
 public class LogConfigurator {
     private Level rootLevel = Level.DEBUG;

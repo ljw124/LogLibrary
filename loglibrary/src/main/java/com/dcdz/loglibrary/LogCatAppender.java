@@ -9,7 +9,7 @@ import org.apache.log4j.PatternLayout;
 import org.apache.log4j.spi.LoggingEvent;
 
 /**
- * Created by ljw on 2017/3/29.
+ * Created by ljw on 2018/11/7.
  */
 public class LogCatAppender extends AppenderSkeleton {
 

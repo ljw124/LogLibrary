@@ -7,15 +7,15 @@ import org.apache.log4j.Level;
 import java.io.File;
 
 /**
- * Created by ljw on 2017/3/29.
+ * Created by ljw on 2018/11/7.
  */
 public class Log4jConfigure {
     private static final int MAX_FILE_SIZE = 1024 * 1024 * 10;
-    private static final String DEFAULT_LOG_FILE_NAME = "db_wan_android.txt";
+    private static final String DEFAULT_LOG_FILE_NAME = "log.txt";
     //private static final String DEFAULT_LOG_FILE_NAME = "log";
     private static final String TAG = "Log4jConfigure";
     // 对应AndroidManifest文件中的package
-    private static final String PACKAGE_NAME = "com.dcdz.wanandroid";
+    private static final String PACKAGE_NAME = "com.dcdz.loglibrary";
 
     private static void configure(String fileName, String filePath) {
         final LogConfigurator logConfigurator = new LogConfigurator();
@@ -28,7 +28,7 @@ public class Log4jConfigure {
                 filedir = filePath;
             }
 
-            fileName = filedir + File.separator + "ljw_wan_android" + File.separator + "log" + File.separator + fileName;
+            fileName = filedir + File.separator + "LogFile" + File.separator + "log" + File.separator + fileName;
 
             //设置文件名
             logConfigurator.setFileName(fileName);

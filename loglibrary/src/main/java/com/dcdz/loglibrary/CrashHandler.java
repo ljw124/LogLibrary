@@ -21,11 +21,11 @@ import java.util.Map;
 
 /**
  * 全局异常捕获
- * Created by ljw on 2017/7/3.
+ * Created by ljw on 2018/11/7.
  */
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private final String SDCARD_PATH;
-    public static String HOME_PATH = "/ljw_wan_android";
+    public static String HOME_PATH = "/LogFile";
     public static String DEFAULT_ERROR_PATH = HOME_PATH + "/error";
     private String logPath = "";
 
