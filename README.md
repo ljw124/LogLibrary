@@ -5,24 +5,24 @@
 
 ## LogLibrary 使用
 Step 1.先在 build.gradle(Project:XXXX) 的 repositories 添加:
-
+```javascript
 allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-  
+  ```
   
   Step 2. 然后在 build.gradle(Module:app) 的 dependencies 添加:
-  
+  ```javascript
   dependencies {
 	        implementation 'com.github.ljw124:LogLibrary:1.0.5'
 	}
-  
+    ```
   
   Step3. 在Application中初始化:
-  
+    ```javascript
   public class MyApplication extends Application {
 
     protected static Logger log = Logger.getLogger(MyApplication.class);
@@ -43,10 +43,10 @@ allprojects {
         }.start();
     }
 }
-
+  ```
 
 Step4. 在需要的地方使用:
-
+    ```javascript
 public class MainActivity extends AppCompatActivity {
 
     protected static Logger log = Logger.getLogger(MainActivity.class);
@@ -61,3 +61,4 @@ public class MainActivity extends AppCompatActivity {
         log.error("网络出问题啦……");
     }
 }
+  ```
