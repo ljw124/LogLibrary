@@ -23,15 +23,16 @@ allprojects {
 ```
  
   Step3. 在Application中初始化:
- 
+ ```javascript
   public class MyApplication extends Application {
-	
+    
+    //初始化Logger
     protected static Logger log = Logger.getLogger(MyApplication.class);
 
     @Override
     public void onCreate() {
         super.onCreate();
-        
+
         //初始化LogLibrary
         CrashHandler crashHandler = CrashHandler.getInstance();
         crashHandler.init(this);
@@ -44,12 +45,13 @@ allprojects {
         }.start();
     }
 }
-
+```
 
 Step4. 在需要的地方使用:
+ ```javascript
+ public class MainActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-
+    //初始化Logger
     protected static Logger log = Logger.getLogger(MainActivity.class);
 
     @Override
@@ -62,4 +64,4 @@ public class MainActivity extends AppCompatActivity {
         log.error("网络出问题啦……");
     }
 }
-
+```
