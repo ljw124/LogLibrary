@@ -20,8 +20,8 @@ allprojects {
 	        implementation 'com.github.ljw124:LogLibrary:1.0.5'
 	}
 	
-    ```
-  
+```
+ 
   Step3. 在Application中初始化:
  
   public class MyApplication extends Application {
