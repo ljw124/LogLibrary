@@ -3,7 +3,7 @@
 * 可以把程序运行的详细信息记录到日志里。
 * 项目在测试阶段，如果有崩溃，只需向测试人员要崩溃日志即可，可以查看详细信息。
 
-## LogLibrary 使用
+## LogLibrary使用:
 Step 1.先在 build.gradle(Project:XXXX) 的 repositories 添加:
 ```javascript
 allprojects {
