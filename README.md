@@ -17,6 +17,7 @@ allprojects {
   Step 2. 然后在 build.gradle(Module:app) 的 dependencies 添加:
   ```javascript
   dependencies {
+  		implementation 'log4j:log4j:1.2.17'
 	        implementation 'com.github.ljw124:LogLibrary:1.0.5'
 	}
 	
